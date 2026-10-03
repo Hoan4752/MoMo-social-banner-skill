@@ -1,0 +1,16 @@
+{
+  "task": "student-pass-u22",
+  "brief": {"goal": "Làm lại banner Student Pass U22 (ref R14) với visual khác.", "note": "element-A.png là ảnh AI cũ (không phải asset chính thức), chủ đề đi học — nên thay bằng cảnh rạp phim S1: python3 skill/img.py prompt projects/student-pass-u22"},
+  "variants": {
+    "A": {
+      "layout": "L1", "theme": "pink",
+      "headline": ["Sinh viên mê xem phim", "U22 nhận [ưu đãi giá vé]"],
+      "sub": ["tại Student Pass"], "h_size": 52,
+      "element": {"file": "element-A.png", "left": 140, "top": 8, "width": 590},
+      "strips": [2, 5, 8],
+      "image": {"style": "S1", "tone": "pink-blue", "kind": "scene",
+                "scene": "two Vietnamese university students (a girl with long wavy hair in overalls, a boy in a cap with a backpack) cheering in front of a cinema: big glowing movie screen, popcorn bucket, soda cup, movie tickets flying, film reel"}
+    }
+  },
+  "log": [{"date": "2026-10-02", "agent": "Claude", "note": "Chuyển sang spec.json."}]
+}

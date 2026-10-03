@@ -1,0 +1,339 @@
+{
+  "task": "nghien-connect-3-demo",
+  "brief": {
+    "goal": "Banner demo sự kiện Nghiên Connect #3: Dùng AI làm Brand? — template MoMo, logo Nghiên AI ở góc, KHÔNG dùng logo MoMo. 9 mẫu khác nhau ghép 3×3.",
+    "audience": "Brand Marketer",
+    "copy_goc": {
+      "headline": "Nghiên Connect #3: Dùng AI làm Brand?",
+      "sub": "Cà phê cùng các Brand Marketer nào!"
+    },
+    "missing": "Ngày giờ, địa điểm — không bịa. Hình là ảnh tạm (mascot MoMo / ảnh sự kiện Nghiên AI)."
+  },
+  "defaults": {
+    "partner": "nghienai-logo-mark.png",
+    "partner_h": 62,
+    "no_momo": true
+  },
+  "variants": {
+    "1": {
+      "group": "key-visual",
+      "layout": "L1",
+      "theme": "pink",
+      "formula": "Tên sự kiện nhấn #3",
+      "headline": [
+        "Nghiên Connect [#3]",
+        "Dùng AI làm Brand?"
+      ],
+      "sub": [
+        "Cà phê cùng các Brand Marketer nào!"
+      ],
+      "element": {
+        "file": "element-1.png",
+        "left": 380,
+        "top": 10,
+        "width": 340
+      },
+      "strips": [
+        3,
+        6,
+        9
+      ]
+    },
+    "2": {
+      "group": "text-effect",
+      "layout": "L1",
+      "sub": [
+        "Cà phê cùng các Brand Marketer nào!"
+      ],
+      "strips": [
+        1,
+        4,
+        7
+      ],
+      "theme": "blue",
+      "fx": {
+        "kw": "AI",
+        "style": "teal",
+        "cap": 330
+      },
+      "headline": [
+        "Nghiên Connect #3",
+        "Làm Brand cùng"
+      ]
+    },
+    "3": {
+      "group": "text-effect",
+      "layout": "L1",
+      "sub": [
+        "Cà phê cùng các Brand Marketer nào!"
+      ],
+      "strips": [
+        2,
+        5,
+        8
+      ],
+      "theme": "mint",
+      "fx": {
+        "kw": "Sẵn sàng?",
+        "style": "green"
+      },
+      "headline": [
+        "Nghiên Connect #3",
+        "Brand thời AI,"
+      ]
+    },
+    "4": {
+      "group": "photo",
+      "layout": "L2",
+      "theme": "pink",
+      "formula": "Photo cộng đồng + texture",
+      "headline": [
+        "Nghiên Connect [#3]",
+        "Dùng AI làm Brand?"
+      ],
+      "sub": [
+        "Cà phê cùng các Brand Marketer nào!"
+      ],
+      "visual": "visual-4.png",
+      "texture": true,
+      "strips": [
+        4,
+        7,
+        10
+      ]
+    },
+    "5": {
+      "group": "photo",
+      "layout": "L2",
+      "theme": "blue",
+      "formula": "Photo panel talk + texture",
+      "headline": [
+        "Nghiên Connect #3",
+        "[Dùng AI làm Brand?]"
+      ],
+      "sub": [
+        "Cà phê cùng các Brand Marketer nào!"
+      ],
+      "visual": "visual-5.png",
+      "texture": true,
+      "strips": [
+        2,
+        6,
+        8
+      ]
+    },
+    "6": {
+      "group": "photo",
+      "layout": "L2",
+      "theme": "mint",
+      "formula": "Photo khán giả + texture",
+      "headline": [
+        "{Dùng AI} làm Brand?",
+        "Nghiên Connect #3"
+      ],
+      "sub": [
+        "Cà phê cùng các Brand Marketer nào!"
+      ],
+      "visual": "visual-6.png",
+      "texture": true,
+      "strips": [
+        1,
+        5,
+        9
+      ]
+    },
+    "7": {
+      "group": "no-visual",
+      "layout": "L3",
+      "theme": "pink",
+      "formula": "Editorial panel, chỉ chữ",
+      "chip": {
+        "icon": "nghienai-logo-mark.png",
+        "label": [
+          "Nghiên AI",
+          "Connect #3"
+        ]
+      },
+      "headline": [
+        "Dùng AI",
+        "làm [Brand]?"
+      ],
+      "sub": [
+        "Cà phê cùng các",
+        "Brand Marketer nào!"
+      ],
+      "h_size": 72,
+      "strips": [
+        3,
+        6,
+        9
+      ]
+    },
+    "8": {
+      "group": "template-khac",
+      "custom": "top-logo",
+      "theme": "blue",
+      "formula": "Logo trên + chip chủ đề, photo băng dưới",
+      "headline": [
+        "Dùng AI làm [Brand?]"
+      ],
+      "sub": [
+        "Cà phê cùng các Brand Marketer nào!"
+      ],
+      "visual": "visual-8.png",
+      "texture": true,
+      "strips": [
+        2,
+        5,
+        8
+      ]
+    },
+    "9": {
+      "group": "no-logo",
+      "custom": "split-right",
+      "theme": "pink",
+      "formula": "Không logo, key-visual bên phải",
+      "headline": [
+        "Nghiên Connect #3",
+        "Dùng AI",
+        "làm [Brand]?"
+      ],
+      "sub": [
+        "Cà phê cùng các",
+        "Brand Marketer nào!"
+      ],
+      "element": {
+        "file": "element-9.png",
+        "left": 20,
+        "top": 250,
+        "width": 290
+      },
+      "strips": [
+        1,
+        4,
+        7
+      ]
+    },
+    "opt1": {
+      "group": "text-effect",
+      "layout": "L1",
+      "sub": [
+        "Cà phê cùng các Brand Marketer nào!"
+      ],
+      "strips": [
+        3,
+        6,
+        9
+      ],
+      "theme": "blue",
+      "fx": {
+        "kw": "AI",
+        "style": "teal",
+        "cap": 330
+      },
+      "headline": [
+        "Nghiên Connect #3",
+        "Làm Brand cùng"
+      ]
+    },
+    "opt2": {
+      "group": "text-effect",
+      "layout": "L1",
+      "sub": [
+        "Cà phê cùng các Brand Marketer nào!"
+      ],
+      "strips": [
+        1,
+        4,
+        7
+      ],
+      "theme": "mint",
+      "fx": {
+        "kw": "Sẵn sàng?",
+        "style": "green"
+      },
+      "headline": [
+        "Nghiên Connect #3",
+        "Brand thời AI,"
+      ]
+    },
+    "opt3": {
+      "group": "text-effect",
+      "layout": "L1",
+      "sub": [
+        "Cà phê cùng các Brand Marketer nào!"
+      ],
+      "strips": [
+        2,
+        5,
+        8
+      ],
+      "theme": "pink",
+      "fx": {
+        "kw": "Brand mới",
+        "style": "pinklt"
+      },
+      "headline": [
+        "Nghiên Connect #3",
+        "Một ly cà phê,"
+      ]
+    },
+    "opt4": {
+      "group": "text-effect",
+      "layout": "L1",
+      "sub": [
+        "Cà phê cùng các Brand Marketer nào!"
+      ],
+      "strips": [
+        4,
+        7,
+        10
+      ],
+      "theme": "pink",
+      "fx": {
+        "kw": "Tới đâu?",
+        "style": "wave"
+      },
+      "headline": [
+        "Nghiên Connect #3",
+        "AI làm Brand,"
+      ]
+    },
+    "opt5": {
+      "group": "text-effect",
+      "layout": "L1",
+      "sub": [
+        "Cà phê cùng các Brand Marketer nào!"
+      ],
+      "strips": [
+        2,
+        6,
+        8
+      ],
+      "theme": "blue",
+      "fx": {
+        "kw": "Hype?",
+        "style": "box",
+        "max_w": 600
+      },
+      "headline": [
+        "Nghiên Connect #3",
+        "Thật hay"
+      ]
+    }
+  },
+  "log": [
+    {
+      "date": "2026-10-02",
+      "agent": "Claude",
+      "note": "9 mẫu: 3 KV mascot MoMo · 3 photo + frame-texture · L3 không hình · template logo trên · không logo KV phải. Không logo MoMo."
+    }
+  ],
+  "title_options": [
+    "Làm Brand cùng AI",
+    "Brand thời AI, sẵn sàng?",
+    "Một ly cà phê, một Brand mới",
+    "AI làm Brand, tới đâu?",
+    "Thật hay hype?"
+  ]
+}

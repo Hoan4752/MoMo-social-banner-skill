@@ -1,0 +1,137 @@
+{
+  "task": "nghien-connect-4",
+  "brief": {
+    "goal": "Banner cho sự kiện Nghiên Connect #4 của Nghiên AI với chủ đề Vibe Coding cho người mới bắt đầu. Chuẩn phong cách thiết kế MoMo, kết hợp logo Nghiên AI, không dùng logo MoMo. 3 phương án tư vấn đa dạng layout, theme và góc tiếp cận.",
+    "audience": "Người mới bắt đầu, non-coders, marketers, designers, product managers, sinh viên muốn tự build app/web bằng AI",
+    "copy_goc": {
+      "headline": "Nghiên Connect #4: Vibe Coding cho người mới",
+      "sub": "Tự làm sản phẩm cùng AI từ con số 0"
+    },
+    "missing": "Thời gian và địa điểm cụ thể — không bịa ngoài brief"
+  },
+  "defaults": {
+    "partner": "nghienai-logo-mark.png",
+    "partner_h": 62,
+    "partner_top_h": 38,
+    "no_momo": true
+  },
+  "variants": {
+    "A": {
+      "group": "key-visual",
+      "layout": "L2",
+      "theme": "nghien",
+      "formula": "Đối tượng / Nỗi sợ + Lời giải (Đập tan rào cản)",
+      "title_options": [
+        "✅ Chưa từng học code, / vẫn [Vibe Coding chuẩn]",
+        "Không rành lập trình? / Thử ngay [Vibe Coding]!",
+        "Nghiên Connect [#4] / Tự làm app cùng AI / dễ như trò chuyện"
+      ],
+      "headline": [
+        "Chưa từng học code,",
+        "vẫn [Vibe Coding chuẩn]"
+      ],
+      "sub": [
+        "Cà phê & thực chiến Vibe Coding cho người mới!"
+      ],
+      "visual": "visual-A.png",
+      "image": {
+        "style": "S1",
+        "tone": "peach-blue",
+        "kind": "scene",
+        "scene": "a young cheerful Vietnamese person wearing glasses and headphones sitting comfortably with laptop and iced coffee at a modern desk, colorful glowing UI cards and friendly code blocks floating smoothly in the air",
+        "save_as": "visual-A.png",
+        "ratio": "3:2",
+        "prompt": "Keep EXACTLY the drawing style, line color, halftone shading, engraving lines and palette of the reference illustrations. Even medium ink outlines in #1F4FA8 (never black); flat pastel fills (peach #F59A7A / #FFEFE6 with blue #1F4FA8 accents); shadows ONLY as halftone dots and parallel hatching; background with fine wavy parallel engraving lines like a banknote; maximum 3 hues; young Vietnamese people, realistic proportions, casual clothes, cheerful.\nCreate a NEW illustration, aspect ratio 3:2: a young cheerful Vietnamese person wearing glasses and headphones sitting comfortably with laptop and iced coffee at a modern desk, colorful glowing UI cards and friendly code blocks floating smoothly in the air.\nClean rectangle. Main subjects center-right; top-left and bottom-left corners calm and empty (they will be cropped by the layout frame; the bottom-left holds the logo).\nFORBIDDEN: 3D, render, clay, glossy, gradients, glow, soft drop shadows, black outlines, anime/chibi, neon, more than 3 hues, plain white background, any text/letters/numbers/logos/QR, frames, borders, pink 'mo mo' strips, the MoMo mascot.",
+        "attach": [
+          "references/style_packs/S1_crayon_halftone/R02.png",
+          "references/style_packs/S1_crayon_halftone/R07.png",
+          "references/style_packs/S1_crayon_halftone/R14.png"
+        ]
+      },
+      "strips": [
+        2,
+        5,
+        8
+      ]
+    },
+    "B": {
+      "group": "editorial",
+      "layout": "L3",
+      "theme": "blue",
+      "formula": "Câu hỏi gợi tò mò (Editorial Panel L3, Không hình)",
+      "title_options": [
+        "✅ Người mới toanh, / có [Vibe Coding] / được không?",
+        "Chỉ cần gõ prompt, / AI [tự viết code] / thật sao?",
+        "Lập trình bằng vibe, / người mới [bắt đầu từ đâu]?"
+      ],
+      "chip": {
+        "icon": "nghienai-logo-mark.png",
+        "label": [
+          "Nghiên",
+          "Connect #4"
+        ]
+      },
+      "headline": [
+        "Người mới toanh,",
+        "có [Vibe Coding]",
+        "được không?"
+      ],
+      "sub": [
+        "Bật mí cách làm chủ AI build app từ con số 0."
+      ],
+      "footnote": "(*) Nghiên Connect #4 — Buổi chia sẻ & thực hành Vibe Coding cùng Nghiên AI",
+      "strips": [
+        1,
+        4,
+        7
+      ]
+    },
+    "C": {
+      "group": "key-visual",
+      "layout": "L2",
+      "theme": "mint",
+      "logo_pos": "top",
+      "formula": "Chữ ký tay cảm xúc (Logo trên Title, Rủ rê nhập môn)",
+      "title_options": [
+        "✅ {Vibe Coding cực chill} / Nghiên Connect #4",
+        "{Code theo vibe}, / người mới cũng làm được",
+        "{Tự build app đầu tay} / cùng Nghiên Connect #4"
+      ],
+      "headline": [
+        "{Vibe Coding cực chill}",
+        "Nghiên Connect #4"
+      ],
+      "sub": [
+        "Biến mọi ý tưởng thành app,",
+        "chỉ với vài dòng prompt!"
+      ],
+      "visual": "visual-C.png",
+      "image": {
+        "style": "S1",
+        "tone": "mint",
+        "kind": "scene",
+        "scene": "two young smiling Vietnamese friends collaborating excitedly over a laptop at a cafe table, pointing at a freshly generated creative app screen on their display, coffee cups and plants around",
+        "save_as": "visual-C.png",
+        "ratio": "3:2",
+        "prompt": "Keep EXACTLY the drawing style, line color, halftone shading, engraving lines and palette of the reference illustrations. Even medium ink outlines in #16705F (never black); flat pastel fills (mint #7FCFB8 / #EAF9F3 with one pink #F95396 accent); shadows ONLY as halftone dots and parallel hatching; background with fine wavy parallel engraving lines like a banknote; maximum 3 hues; young Vietnamese people, realistic proportions, casual clothes, cheerful.\nCreate a NEW illustration, aspect ratio 3:2: two young smiling Vietnamese friends collaborating excitedly over a laptop at a cafe table, pointing at a freshly generated creative app screen on their display, coffee cups and plants around.\nClean rectangle. Main subjects center-right; top-left and bottom-left corners calm and empty (they will be cropped by the layout frame; the bottom-left holds the logo).\nFORBIDDEN: 3D, render, clay, glossy, gradients, glow, soft drop shadows, black outlines, anime/chibi, neon, more than 3 hues, plain white background, any text/letters/numbers/logos/QR, frames, borders, pink 'mo mo' strips, the MoMo mascot.",
+        "attach": [
+          "references/style_packs/S1_crayon_halftone/R09.png",
+          "references/style_packs/S1_crayon_halftone/R12.png",
+          "references/style_packs/S1_crayon_halftone/R14.png"
+        ]
+      },
+      "strips": [
+        3,
+        6,
+        9
+      ]
+    }
+  },
+  "log": [
+    {
+      "date": "2026-10-03",
+      "agent": "Gemini",
+      "note": "Khởi tạo 3 phương án tư vấn cho Nghiên Connect #4 (Vibe Coding cho người mới): Phương án A (L2 · theme nghien cam san hô), Phương án B (L3 · editorial blue), Phương án C (L2 · theme mint chữ ký tay)."
+    }
+  ]
+}

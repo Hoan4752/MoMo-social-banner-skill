@@ -1,0 +1,62 @@
+{
+  "task": "ten-task",
+  "brief": {
+    "goal": "",
+    "audience": "",
+    "copy_goc": {"headline": "", "sub": ""},
+    "missing": ""
+  },
+  "defaults": {
+    "partner": "nghienai-logo-mark.png",
+    "partner_h": 62,
+    "partner_top_h": 38,
+    "no_momo": true
+  },
+  "variants": {
+    "A": {
+      "group": "key-visual",
+      "layout": "L2",
+      "theme": "nghien",
+      "formula": "Đối tượng / Nỗi sợ + Lời giải (Đập tan rào cản)",
+      "title_options": ["Dòng 1 / Dòng 2 [nhấn] ✅", "..."],
+      "headline": ["Dòng 1", "Dòng 2 [nhấn]"],
+      "sub": ["Mô tả phụ dòng 1", "dòng 2"],
+      "visual": "visual-A.png",
+      "image": {
+        "style": "S1",
+        "tone": "peach-blue",
+        "kind": "scene",
+        "scene": "mô tả cảnh bằng tiếng Anh"
+      },
+      "strips": [2, 5, 8]
+    },
+    "B": {
+      "group": "editorial",
+      "layout": "L3",
+      "theme": "blue",
+      "formula": "Câu hỏi gợi tò mò (Editorial Card L3)",
+      "title_options": ["... ✅", "..."],
+      "chip": {
+        "icon": "nghienai-logo-mark.png",
+        "label": ["Chủ đề", "dòng 2"]
+      },
+      "headline": ["Dòng 1", "có [cụm nhấn]", "dòng 3?"],
+      "sub": ["Mô tả phụ"],
+      "footnote": "(*) Chú thích chân trang",
+      "strips": [1, 4, 7]
+    },
+    "C": {
+      "group": "photo",
+      "layout": "L2",
+      "theme": "nghien",
+      "logo_pos": "top",
+      "formula": "Chữ ký tay cảm xúc (Logo trên Title)",
+      "title_options": ["{Cụm chữ ký} / Tên sự kiện ✅", "..."],
+      "headline": ["{Cụm chữ ký}", "Tên sự kiện"],
+      "sub": ["Mô tả phụ"],
+      "visual": "photo-C.png",
+      "strips": [3, 6, 9]
+    }
+  },
+  "log": []
+}

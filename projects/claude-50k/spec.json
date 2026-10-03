@@ -1,0 +1,17 @@
+{
+  "task": "claude-50k",
+  "brief": {"goal": "Làm lại banner CapCut Pro (ref R05) cho đối tác Claude, MoMo tặng deal giảm 50k.",
+            "note": "banner-claude-50k-A.png là bản dựng cũ (điện thoại vẽ bằng CSS, chữ 'Claude' tạm). Dựng lại bằng build.py khi có: logo Claude chính thức (claude-logo.png) + visual-A.png."},
+  "variants": {
+    "A": {
+      "layout": "L2", "theme": "blue",
+      "headline": ["Claude Pro", "Trợ thủ AI của bạn"],
+      "sub": ["MoMo tặng deal giảm [50k]"], "cta": "LẤY NGAY",
+      "partner": "claude-logo.png", "partner_h": 50,
+      "visual": "visual-A.png",
+      "image": {"style": "S2", "kind": "scene",
+                "scene": "a glossy light-blue smartphone standing upright in the center on a soft sky-blue gradient background, a large blank white rounded card floating in front of the screen, three blank white list rows on the screen"}
+    }
+  },
+  "log": [{"date": "2026-10-02", "agent": "Claude", "note": "Chuyển sang spec.json; giữ ảnh bản cũ. Chờ logo Claude + visual."}]
+}

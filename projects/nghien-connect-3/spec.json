@@ -1,0 +1,52 @@
+{
+  "task": "nghien-connect-3",
+  "brief": {
+    "goal": "Banner chính thức cho sự kiện Nghiên Connect #3: Dùng AI làm Brand?, cà phê cùng các Brand Marketer. Chuẩn phong cách và template MoMo kết hợp nhận diện Nghiên AI (Theme màu cam san hô #FF623B, lớp texture vân sóng banknote phủ trên hình photo, không logo MoMo).",
+    "audience": "Brand Marketers, designers, creative leads",
+    "copy_goc": {
+      "headline": "Nghiên Connect #3: Dùng AI làm Brand?",
+      "sub": "Cà phê cùng các Brand Marketer nào!"
+    },
+    "missing": "Ngày giờ, địa điểm cụ thể — không bịa ngoài brief"
+  },
+  "defaults": {
+    "partner": "nghienai-logo-mark.png",
+    "partner_h": 62,
+    "partner_top_h": 38,
+    "no_momo": true
+  },
+  "variants": {
+    "3": {
+      "group": "photo",
+      "layout": "L2",
+      "theme": "nghien",
+      "formula": "Chữ ký tay cảm xúc (Photo Team Nghiên AI cờ cam & cà phê, Lớp Texture bảo an)",
+      "headline": [
+        "{Làm Brand cùng AI}",
+        "Nghiên Connect #3"
+      ],
+      "sub": [
+        "Cà phê cùng các Brand Marketer nào!"
+      ],
+      "visual": "photo-3.png",
+      "strips": [2, 5, 8]
+    }
+  },
+  "log": [
+    {
+      "date": "2026-10-02",
+      "agent": "Gemini",
+      "note": "Chốt duy nhất Mẫu 3 theo yêu cầu (bỏ lưới 3x3), bổ sung lớp texture bảo an banknote nổi bật phủ trên bề mặt ảnh chụp photo-3."
+    },
+    {
+      "date": "2026-10-02",
+      "agent": "Gemini",
+      "note": "Thiết kế lại Mẫu 3 với ảnh chụp team Nghiên AI (IMG_9111.JPG) cầm cờ cúp cà phê, tinh chỉnh colography với theme 'nghien' đồng bộ màu cam san hô (#FF623B), sóng nền banknote tông ấm."
+    },
+    {
+      "date": "2026-10-02",
+      "agent": "Gemini",
+      "note": "Cập nhật Mẫu 1, 3, 6 sử dụng ảnh thực tế từ kho ảnh sự kiện Nghiên AI (photo-1, photo-3, photo-6). Áp dụng 6 option headline wording mới đa dạng cho 9 mẫu."
+    }
+  ]
+}

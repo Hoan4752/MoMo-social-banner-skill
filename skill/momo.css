@@ -1,0 +1,115 @@
+/* momo.css — gộp tokens + themes + banner. Canvas 900×900, xuất ×1.2 = 1080. Tên class = Banner anatomy (skill/2-banner.md §1). */
+/* ===== 1. Tokens: font + màu brand ===== */
+@font-face { font-family: "MoMo Trust Display"; src: url("../assets/fonts/momotrustdisplay-webfont-1.woff2") format("woff2"), url("../assets/fonts/momotrustdisplay-webfont-1.woff") format("woff"); font-display: block; }
+@font-face { font-family: "MoMo Trust Sans"; font-weight: 300; src: url("../assets/fonts/momotrustsans-light-webfont-1.woff2") format("woff2"), url("../assets/fonts/momotrustsans-light-webfont-1.woff") format("woff"); }
+@font-face { font-family: "MoMo Trust Sans"; font-weight: 400; src: url("../assets/fonts/momotrustsans-regular-webfont-1.woff2") format("woff2"), url("../assets/fonts/momotrustsans-regular-webfont-1.woff") format("woff"); }
+@font-face { font-family: "MoMo Trust Sans"; font-weight: 500; src: url("../assets/fonts/momotrustsans-medium-webfont-1.woff2") format("woff2"), url("../assets/fonts/momotrustsans-medium-webfont-1.woff") format("woff"); }
+@font-face { font-family: "MoMo Signature"; src: url("../assets/fonts/momosignature-webfont-1.woff2") format("woff2"), url("../assets/fonts/momosignature-webfont-1.woff") format("woff"); }
+
+:root {
+  /* Core */
+  --momo-pink: #A50064;      /* Pantone 234C — logo, headline */
+  --white: #FFFFFF; --black: #000000;
+  /* Pink 2.0 */
+  --pink-m2: #FFEFF4;        /* nền sáng nhất */
+  --pink-m1: #FEC8DC;        /* khung, thẻ */
+  --pink-0:  #FF9DBE;        /* chuyển tiếp */
+  --pink-p1: #F95396;        /* nhấn, tương tác */
+  --pink-p2: #A50064;
+  --pink-stripe: #DD2B86;    /* sọc badge (project convention) */
+  /* Nền xanh banknote (project convention) */
+  --blue-bg: #ECF6FC; --blue-bg-2: #F6FCFF;
+
+  /* Typography */
+  --font-display: "MoMo Trust Display", sans-serif;
+  --font-sans: "MoMo Trust Sans", sans-serif;
+  --font-signature: "MoMo Signature", cursive;
+  --lh: 1.22;                /* line-height chuẩn 122% */
+  --tracking: 0;             /* letter-spacing chuẩn = 0 */
+
+  /* Pattern */
+  --pattern-opacity-bg: 0.18;   /* 0.12–0.32 */
+  --pattern-opacity-fg: 0.14;   /* 0.10–0.18 */
+  --radius-card: 28px;
+}
+.momo-headline { font-family: var(--font-display); line-height: var(--lh); letter-spacing: var(--tracking); color: var(--momo-pink); }
+.momo-body     { font-family: var(--font-sans); line-height: var(--lh); letter-spacing: var(--tracking); }
+.momo-sign     { font-family: var(--font-signature); font-size: 1em; } /* chỉ 1 lần / headline, cùng cỡ Display */
+
+/* ===== 2. Themes (data-theme) ===== */
+.poster { --bg: #FFEEF4; --wave: url("../assets/patterns/tinted/bg_wave_pink.png"); --frame-wave: url("../assets/patterns/tinted/frame_wave_pink.png");
+          --frame-top: #FFE1EC; --frame-bot: #FBC4D9; --hl-1: #F95396; --hl-2: #DD2B86; --hl-text: #fff;
+          --panel-top: #FFF8FB; --panel-mid: #FFF0F5; --panel-bot: #FFCFE0; --chip-border: #F7A8C5; --text: #0A0A0A; }
+.poster[data-theme="blue"] { --bg: #EAF5FD; --wave: url("../assets/patterns/tinted/bg_wave_blue.png"); --frame-wave: url("../assets/patterns/tinted/frame_wave_blue.png");
+          --frame-top: #A8CCF5; --frame-bot: #6EA7EB; --hl-1: #1F5FC4; --hl-2: #174C9E;
+          --panel-top: #F7FBFF; --panel-mid: #EEF6FD; --panel-bot: #CFE3F6; --chip-border: #9CC3EC; }
+.poster[data-theme="mint"] { --bg: #E4F9F2; --wave: url("../assets/patterns/tinted/bg_wave_mint.png"); --frame-wave: url("../assets/patterns/tinted/frame_wave_mint.png");
+          --frame-top: #D3F2E8; --frame-bot: #A9E0CF; --hl-1: #1E8C7A; --hl-2: #157062;
+          --panel-top: #F6FDFA; --panel-mid: #EAF9F3; --panel-bot: #C4EBDD; --chip-border: #93D6C2; }
+.poster[data-theme="yellow"] { --bg: #FFF7DA; --frame-top: #FFF0B8; --frame-bot: #FFE08A; --hl-1: #E5242B; --hl-2: #B81D22;
+          --panel-top: #FFFDF3; --panel-mid: #FFF7DA; --panel-bot: #FFE9A6; --chip-border: #F2CF6B; }
+.poster[data-theme="peach"] { --bg: #FFEFE6; --wave: url("../assets/patterns/tinted/bg_wave_nghien.png"); --frame-wave: url("../assets/patterns/tinted/frame_wave_nghien.png");
+          --frame-top: #FFE0CF; --frame-bot: #FFC2A3; --hl-1: #FF623B; --hl-2: #E04823;
+          --panel-top: #FFFAF6; --panel-mid: #FFEFE6; --panel-bot: #FFD3BC; --chip-border: #F7B08F; }
+.poster[data-theme="nghien"] { --bg: #FFF3EE; --wave: url("../assets/patterns/tinted/bg_wave_nghien.png"); --frame-wave: url("../assets/patterns/tinted/frame_wave_nghien.png");
+          --frame-top: #FFE2D8; --frame-bot: #FFC0AC; --hl-1: #FF623B; --hl-2: #E04823;
+          --panel-top: #FFF9F6; --panel-mid: #FFF1EB; --panel-bot: #FFD6C9; --chip-border: #FFAE96; }
+
+
+.poster { background: var(--bg); color: var(--text); }
+.bg-wave { background: var(--wave) right top / 900px auto repeat-y; }
+.frame-texture { background: var(--frame-wave) right top / 1100px auto repeat-y; opacity: .75; }
+.hl-box { color: var(--hl-text); padding: 0 10px; border-radius: 3px;
+          background: repeating-linear-gradient(135deg, var(--hl-1) 0 6px, var(--hl-2) 6px 12px); }
+.hl-sign { font-family: var(--font-signature); color: var(--hl-1); font-weight: 400; }
+
+/* ===== 3. Layout banner ===== */
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: #ddd; }
+body { display: grid; place-items: center; }
+.poster { position: relative; width: 900px; height: 900px; overflow: hidden; isolation: isolate; }
+.poster > * { position: absolute; }
+
+.bg-wave { inset: 0; z-index: 1; }
+
+/* qr-frame: toạ độ đặt bằng biến --fx --fy --fw --fh; góc cắt bằng data-tl/tr/bl/r (skill/momo.js) */
+.qr-frame { left: var(--fx); top: var(--fy); width: var(--fw); height: var(--fh); z-index: 3; overflow: hidden;
+            background: linear-gradient(180deg, var(--frame-top), var(--frame-bot)); }
+.qr-frame > * { position: absolute; }
+.photo { inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+.frame-texture { inset: 0; z-index: 2; pointer-events: none; }
+
+/* logo-only: notch bl 103×95, logo 81px neo góc dưới-trái */
+.logo-cutout { left: var(--fx); top: calc(var(--fy) + var(--fh) - 95px); width: 103px; height: 95px; z-index: 5;
+               display: flex; align-items: flex-end; padding: 0 0 2px 2px; }
+.logo-cutout img { width: 81px; height: auto; display: block; }
+
+/* cobrand: MoMo 81px — gap 1 chữ "O" (30px) — logo đối tác cao --partner-h */
+.lockup { left: var(--fx); top: calc(var(--fy) + var(--fh) - 95px); height: 95px; z-index: 5;
+          display: flex; align-items: flex-end; gap: 30px; padding: 0 0 2px 2px; }
+.lockup .momo { width: 81px; height: auto; display: block; }
+.lockup .partner { height: var(--partner-h, 62px); width: auto; display: block; margin-bottom: 6px; }
+
+.sec-strip { --strip-w: 47px; z-index: 6; display: block; }
+
+/* copy */
+.copy { z-index: 10; }
+.headline { margin: 0; font-family: var(--font-display); font-size: var(--h-size, 50px); line-height: 1.22; letter-spacing: 0; }
+.headline .ln { display: block; white-space: nowrap; }
+.headline .ln + .ln { margin-top: 8px; }
+.sub { margin: 14px 0 0; font-family: var(--font-sans); font-weight: 500; font-size: var(--sub-size, 28px); line-height: 1.22; color: #2A2A2A; }
+.cta { display: inline-block; margin-top: 22px; position: relative; font-family: var(--font-display); font-size: 28px; line-height: 1; color: #fff;
+       padding: 13px 18px 11px; border-radius: 6px; background: #F95396; box-shadow: 0 0 0 3px #fff inset; }
+.cta::after { content: ""; position: absolute; inset: 0; transform: translate(6px, 6px); z-index: -1; border-radius: 6px;
+              background: repeating-linear-gradient(135deg, #DD2B86 0 4px, #F95396 4px 8px); }
+
+/* L3 — tag chip (thẻ chủ đề) nằm trong notch tl; icon 3D; footnote */
+.tag-chip { z-index: 7; display: flex; align-items: center; gap: 14px; padding: 14px 26px 14px 18px; background: #fff;
+            border: 2px solid var(--chip-border); border-radius: 14px; font-family: var(--font-sans); font-weight: 500; font-size: 26px; line-height: 1.15; }
+.tag-chip img { width: 52px; height: 52px; object-fit: contain; }
+.icon-3d { z-index: 7; width: 96px; height: auto; }
+.footnote { z-index: 7; font-family: var(--font-sans); font-size: 15px; color: #3A3A3A; }
+
+/* ===== 4. Element tự do: spot (element tách nền) · mascot chính thức ===== */
+.spot, .mascot { position: absolute; z-index: 7; height: auto; }
+.qr-frame .mascot { z-index: 2; }
